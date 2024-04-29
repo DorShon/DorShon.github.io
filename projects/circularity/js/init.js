@@ -33,7 +33,7 @@ var init = function (window) {
            }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-       for(i = 0; i < 100; i++){
+       for (var i = 0; i < 100; i++){
         drawCircle();
        }
         
@@ -56,7 +56,7 @@ var init = function (window) {
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
             // TODO 9 : Iterate over the array
-           for ( i = 0; i > circles.length; i++ ){
+           for (var i = 0; i < circles.length; i++ ){
             physikz.updatePosition(circles[i])
 
             game.checkCirclePosition(circles[i])
@@ -76,7 +76,6 @@ var init = function (window) {
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
-            
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
 
             // if the circle has gone past the TOP of the screen then place it on the BOTTOM
